@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- <style>
+        p {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 0px;
+        }
+    </style> -->
+</head>
+
+<body>
+    </head>
+
+    <body>
+        <p id="demo"></p>
+        <!-- <h2>JavaScript String Methods</h2>
+    <p>Display the first array element, after a string split:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "a,b,c,d,e,f";
+        const myArray = text.split(",");
+        document.getElementById("demo").innerHTML = myArray[0];
+    </script> -->
+
+
+
+
+        <!-- 7.	Write a closure program and access the data from a function using closure -->
+
+        <!-- <h2>JavaScript Function Closures</h2>
+    <p>Counting with a local variable.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // Initiate counter
+        let counter = 9;
+
+        // Function to increment counter
+        function add() {
+            let counter = 0;
+            counter += 1;
+        }
+
+        // Call add() 3 times
+        add();
+        add();
+        add();
+
+        // The result is not 3 because you mix up the globaland local counter
+        document.getElementById("demo").innerHTML = "The counter is: " + counter;
+
+    </script> -->
+
+
+
+
+        <!-- 10.	Javascript Program to Display Current Date -->
+        <!-- <script>
+
+        // Current Date
+        var g1 = new Date();
+        var g2 = new Date();
+        if (g1.getTime() === g2.getTime())
+            document.write("Both are equal");
+        else
+            document.write("Not equal");
+        javascript: ;
+
+
+
+        var g1 = new Date();
+
+        // (YYYY-MM-DD)
+        var g2 = new Date(2019 - 08 - 03);
+        if (g1.getTime() < g2.getTime())
+            document.write("g1 is lesser than g2");
+        else if (g1.getTime() > g2.getTime())
+            document.write("g1 is greater than g2");
+        else
+            document.write("both are equal");
+
+
+    </script> -->
+
+
+
+
+        <!-- 11.	JavaScript Program to Compare The Value of Two Dates -->
+        <script>
+            // program to compare value of two dates
+            // create two dates
+            const d1 = new Date();
+            const d2 = new Date();
+
+            // comparisons
+            const compare1 = d1 < d2;
+            console.log(compare1);
+
+            const compare2 = d1 > d2;
+            console.log(compare2);
+
+            const compare3 = d1 <= d2;
+            console.log(compare3);
+
+            const compare4 = d1 >= d2;
+            console.log(compare4);
+
+            const compare5 = d1.getTime() === d2.getTime();
+            console.log(compare5);
+
+            const compare6 = d1.getTime() !== d2.getTime();
+            console.log(compare6);
+        </script>
+
+
+
+
+        <!-- 14.	Javascript Program to Generate a Random Number Between Two Numbers -->
+        <!-- <h2>JavaScript Math</h2>
+
+    <p>Math.floor(Math.random() * 11) returns a random integer between 0 and 10 (both included):</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+            Math.floor(Math.random() * 11);
+    </script> -->
+
+
+
+
+
+        <!-- 15.	JavaScript Program To Get The Current URL -->
+        <!-- <h2>Get the current URL</h2>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+            "The full URL of this page is:<br>" + window.location.href;
+    </script> -->
+
+
+
+        <!-- 16. email validation -->
+        <!-- <div class="content">
+        <header>Email Validation</header>
+        <form action="">
+            <div class="field">
+                <input onkeyup="check()" id="email" type="text" placeholder="Enter your Email">
+                <div class="icons">
+                    <span class="icon1 fas fa-exclamation"></span>
+                    <span class="icon2 fas fa-check-circle"></span>
+                </div>
+            </div>
+            <div class="error-text">Please enter valid email address</div>
+            <button>Submit</button>
+        </form>
+    </div> -->
+
+
+
+
+
+        <!-- <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+ -->
+
+
+
+
+
+        <script src="/script.js"></script>
+
+        <script src="/inc/script1.js"></script>
+    </body>
+
+</html>

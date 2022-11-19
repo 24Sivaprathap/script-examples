@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js INC/DEC QTY</title>
+    <link rel="stylesheet" href="/inc/style1.css">
+</head>
+
+<body>
+
+    <!-- 4.	Increase or decrease input field length based on user input using JS -->
+
+    <h1>INCREMENT & DECREMENT FOR <br> MULTIPLE FIELDS</h1>
+
+    <div class="box">
+        <label for="name">MALES : </label>
+        <div class="dec button"> - </div>
+        <input type="text" name="qty" id="1" value="0" class="input-field">
+        <div class="inc button"> + </div>
+    </div>
+
+    <div class="box">
+        <label for="name">FEMALES : </label>
+        <div class="dec button"> - </div>
+        <input type="text" name="qty" id="2" value="0" class="input-field">
+        <div class="inc button"> + </div>
+    </div>
+
+    <div class="box">
+        <label for="name">CHILDRENS : </label>
+        <div class="dec button"> - </div>
+        <input type="text" name="qty" id="3" value="0" class="input-field">
+        <div class="inc button"> + </div>
+    </div>
+
+    <div class="box">
+        <label for="name">INFANTS : </label>
+        <div class="dec button"> - </div>
+        <input type="text" name="qty" id="4" value="0" class="input-field">
+        <div class="inc button"> + </div>
+    </div>
+
+
+    <script>
+        var incrementButton = document.getElementsByClassName('inc');
+        var decrementButton = document.getElementsByClassName('dec');
+        // console.log(incrementButton);
+        // console.log(decrementButton);
+        // INCREMENT
+        for (var i = 0; i < incrementButton.length; i++) {
+            var button = incrementButton[i];
+            button.addEventListener('click', function (event) {
+                var buttonClicked = event.target;
+                // console.log(buttonClicked);
+                var input = buttonClicked.parentElement.children[2];
+                // console.log(input);
+                var inputValue = input.value;
+                // console.log(inputValue);
+                var newValue = parseInt(inputValue) + 1;
+                // console.log(newValue);
+                input.value = newValue;
+            })
+        }
+
+        // DECREMENT
+        for (var i = 0; i < decrementButton.length; i++) {
+            var button = decrementButton[i];
+            button.addEventListener('click', function (event) {
+                var buttonClicked = event.target;
+                // console.log(buttonClicked);
+                var input = buttonClicked.parentElement.children[2];
+                // console.log(input);
+                var inputValue = input.value;
+                // console.log(inputValue);
+                var newValue = parseInt(inputValue) - 1;
+                // console.log(newValue);
+                // input.value = newValue;
+                if (newValue >= 0) {
+                    input.value = newValue;
+                }
+                else {
+                    input.value = 0;
+                    alert('QTY CANNOT BE LESS THAN 0');
+                }
+            })
+        }
+
+    </script>
+</body>
+
+</html>
